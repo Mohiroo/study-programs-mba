@@ -1,0 +1,172 @@
+.module {
+  max-width: 595.66px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  &:last-child {
+    max-width: 614.37px;
+  }
+}
+
+.module_title {
+  padding-top: 30px;
+  border-top: 2px solid #FF3535;
+
+  font-family: 'StyreneAWeb400';
+  font-size: 32px;
+  line-height: 120%;
+
+  color: #000000;
+}
+
+.module_subjects {
+  max-width: 353px;
+  margin: 36px 0 0 20px; // чекни
+}
+
+.module_subject {
+  margin-bottom: 10px;
+  position: relative;
+
+  font-family: 'StyreneAWeb300';
+  font-size: 16px;
+  line-height: 120%;
+
+  color: #000000;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+
+    position: absolute;
+    left: -20px;
+    top: 8px;
+
+    background: #FF3535;
+    border-radius: 60px;
+  }
+}
+
+@media screen and (max-width: 1320px) {
+  .module {
+    &:first-child {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 660px) {
+  .module {
+    max-width: 630px;
+    flex-direction: column;
+
+    &:first-child {
+      margin-bottom: 10px;
+    }
+  }
+
+  .module_title {
+    border: none;
+    padding: 0;
+
+    height: 51px;
+    max-width: 100%;
+
+    padding: 0 0 0 69px;
+
+    position: relative;
+    background: #F7F7F7;
+
+    font-family: 'StyreneAWeb300';
+    font-size: 18px;
+    line-height: 51px;
+
+    &::before,
+    &::after {
+      content: '';
+      width: 2px;
+      height: 20px;
+      position: absolute;
+      top: 15px;
+      left: 26px;
+
+      border-radius: 2px;
+      background: #D9D9D9;
+    }
+
+    &::before {
+      transform: rotateZ(90deg);
+    }
+
+    &::after {
+      animation: rotateZ0 0.5s;
+    }
+  }
+
+  .module_title_active {
+    background: #FF3535;
+    color: #FFFFFF;
+
+    &::after,
+    &::before {
+      background: #FFFFFF;
+    }
+
+    &::after {
+      transform: rotateZ(90deg);
+      animation: rotateZ90 0.5s;
+    }
+  }
+
+  .module_subjects {
+    max-width: 100%;
+
+    margin: 17px 0 0 20px;
+    display: none;
+  }
+
+  .module_subjects_active {
+    display: block;
+  }
+}
+
+@keyframes rotateZ90 {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(90deg);
+  }
+}
+
+@keyframes rotateZ0 {
+  from {
+    transform: rotateZ(90deg);
+  }
+
+  to {
+    transform: rotateZ(0deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .module_title {
+    &::after {
+      animation: none;
+    }
+  }
+
+  .module_title_active {
+    &::after {
+      animation: none;
+    }
+  }
+}
