@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f5f98806.css",
+    "main.js": "/static/js/main.e1d3d5ef.js",
+    "static/media/StyreneAWeb-Bold.eot": "/static/media/StyreneAWeb-Bold.c2bd195b0c0318d3bd39.eot",
+    "static/media/StyreneAWeb-Bold.ttf": "/static/media/StyreneAWeb-Bold.0be7729139ca49bf9980.ttf",
+    "static/media/StyreneAWeb-Light.eot": "/static/media/StyreneAWeb-Light.015deba1dd878ce966d7.eot",
+    "static/media/StyreneAWeb-Light.ttf": "/static/media/StyreneAWeb-Light.29eb7defa7790cfb7bef.ttf",
+    "static/media/StyreneAWeb-Regular.eot": "/static/media/StyreneAWeb-Regular.61f2da19a54d82ba8201.eot",
+    "static/media/StyreneAWeb-Regular.ttf": "/static/media/StyreneAWeb-Regular.07e7d6b6ed7c25b2cb80.ttf",
+    "static/media/StyreneAWeb-Bold.woff": "/static/media/StyreneAWeb-Bold.b146337bef5e486c9ca5.woff",
+    "static/media/StyreneAWeb-Light.woff": "/static/media/StyreneAWeb-Light.f4c0ff6fefefeb648e32.woff",
+    "static/media/StyreneAWeb-Regular.woff": "/static/media/StyreneAWeb-Regular.8bc4b3b7d00bc24430f3.woff",
+    "static/media/StyreneAWeb-Bold.woff2": "/static/media/StyreneAWeb-Bold.34f6c67bfc9140b996aa.woff2",
+    "static/media/StyreneAWeb-Light.woff2": "/static/media/StyreneAWeb-Light.a8f318585a4d3b48706c.woff2",
+    "static/media/StyreneAWeb-Regular.woff2": "/static/media/StyreneAWeb-Regular.b7ed4080513047a215e5.woff2",
+    "index.html": "/index.html",
+    "main.f5f98806.css.map": "/static/css/main.f5f98806.css.map",
+    "main.e1d3d5ef.js.map": "/static/js/main.e1d3d5ef.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f5f98806.css",
+    "static/js/main.e1d3d5ef.js"
+  ]
+}
