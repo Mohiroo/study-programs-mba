@@ -1,0 +1,51 @@
+html {
+  overflow: hidden;
+}
+
+body {
+  padding: 0 15px;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'StyreneAWeb700';
+  src: url('./fonts/StyreneAWeb-Bold.eot');
+  src: local('Styrene A Web Bold'), local('StyreneAWeb-Bold'),
+    url('./fonts/StyreneAWeb-Bold.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/StyreneAWeb-Bold.woff2') format('woff2'),
+    url('./fonts/StyreneAWeb-Bold.woff') format('woff'),
+    url('./fonts/StyreneAWeb-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'StyreneAWeb400';
+  src: url('./fonts/StyreneAWeb-Regular.eot');
+  src: local('Styrene A Web Regular'), local('StyreneAWeb-Regular'),
+    url('./fonts/StyreneAWeb-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/StyreneAWeb-Regular.woff2') format('woff2'),
+    url('./fonts/StyreneAWeb-Regular.woff') format('woff'),
+    url('./fonts/StyreneAWeb-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'StyreneAWeb300';
+  src: url('./fonts/StyreneAWeb-Light.eot');
+  src: local('Styrene A Web Light'), local('StyreneAWeb-Light'),
+    url('./fonts/StyreneAWeb-Light.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/StyreneAWeb-Light.woff2') format('woff2'),
+    url('./fonts/StyreneAWeb-Light.woff') format('woff'),
+    url('./fonts/StyreneAWeb-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: fallback;
+}
