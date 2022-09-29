@@ -1,0 +1,264 @@
+.study_page {
+  margin: 71px 0 171px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.study_title {
+  width: 100%;
+  margin: 0 0 89px -106px;
+
+  font-family: 'StyreneAWeb700';
+  font-size: 36px;
+  line-height: 120%;
+  text-align: center;
+
+  color: #000000;
+}
+
+.rectangles {
+  max-width: 1286px;
+  width: 100%;
+
+  margin-top: 125px;
+
+  display: flex;
+  justify-content: space-between;
+
+  color: #FFFFFF;
+
+  .rectangle_title {
+    margin: 52px 0 24px 0;
+
+    font-family: 'StyreneAWeb700';
+    font-size: 36px;
+    line-height: 120%;
+  }
+
+  .rectangle_text {
+    font-family: 'StyreneAWeb300';
+    font-size: 20px;
+    line-height: 130%;
+  }
+}
+
+.rectangle_red {
+  max-width: 628px;
+  min-width: 345px;
+  width: 100%;
+  height: 293px;
+
+  position: relative;
+
+  background: #FF3535;
+
+  &::before,
+  &::after {
+    content: '';
+    width: 43px;
+    height: 43px;
+    position: absolute;
+    clip-path: polygon(100% 0, 100% 100%, 0 0);
+    background: white;
+
+    right: -1px;
+    top: -1px;
+  }
+
+  &::after {
+    background: #CD1800;
+    transform: rotate(-180deg);
+
+    top: 0px;
+  }
+
+  .rectangle_title {
+    margin-left: 71px;
+  }
+
+  .rectangle_text {
+    max-width: 463px;
+    margin-left: 71px;
+  }
+}
+
+.rectangle_black {
+  max-width: 628px;
+  min-width: 345px;
+  width: 100%;
+  height: 293px;
+
+  background: #2D2C2A;
+
+  .rectangle_title {
+    margin-left: 57px;
+  }
+
+  .rectangle_text {
+    max-width: 515px;
+    margin: 0 0 10px 77px;
+
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 5px;
+      height: 5px;
+      position: absolute;
+      left: -15px;
+      top: 7px;
+
+      background: #FF3535;
+      border-radius: 60px;
+    }
+  }
+}
+
+.loader {
+  font-size: 6px;
+  margin: 0 auto;
+  text-indent: -9999em;
+  width: 11em;
+  height: 11em;
+  border-radius: 50%;
+  background: linear-gradient(to right, #5d65cb 10%, rgba(93, 101, 203, 0) 42%);
+  position: relative;
+  animation: loading 1.4s infinite linear;
+  transform: translateZ(0);
+
+  &::before {
+    width: 50%;
+    height: 50%;
+    background: #5d65cb;
+    border-radius: 100% 0 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+  }
+
+  &::after {
+    background: white;
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    content: '';
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .loader {
+    height: auto;
+
+    animation: none;
+    background: none;
+    text-indent: initial;
+
+    font-family: 'StyreneAWeb700';
+    font-size: 36px;
+    line-height: 120%;
+
+    &::before {
+      content: 'Идет загрузка...';
+      width: auto;
+      height: auto;
+      background: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1320px) {
+  .study_page {
+    margin: 71px 0;
+  }
+
+  .study_title {
+    margin: 0 0 89px 0;
+  }
+
+  .rectangles {
+    flex-direction: column;
+    align-items: center;
+
+    .rectangle_red {
+      margin-bottom: 23px;
+    }
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 660px) {
+  .study_page {
+    margin: 28px 0 47px;
+  }
+
+  .study_title {
+    margin: 0 0 34px 0;
+
+    font-family: 'StyreneAWeb400';
+    font-size: 28px;
+    text-align: start;
+  }
+
+  .rectangles {
+    margin-top: 44px;
+
+    .rectangle_title {
+      margin: 31px 0 25px 0;
+      font-size: 25px;
+    }
+  }
+
+  .rectangle_red {
+    height: 231px;
+    box-sizing: border-box;
+
+    .rectangle_title {
+      margin-left: 17px;
+    }
+
+    .rectangle_text {
+      max-width: 100%;
+      margin: 0 22px 0;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      width: 26px;
+      height: 26px;
+    }
+  }
+
+  .rectangle_black {
+    height: 342px;
+
+    .rectangle_title {
+      margin-left: 23px;
+    }
+
+    .rectangle_text {
+      max-width: 100%;
+      margin: 0 23px 0 42px;
+    }
+  }
+}
