@@ -1,0 +1,52 @@
+.component {
+  max-width: 1256px;
+  width: 100%;
+
+  margin-bottom: 68px;
+}
+
+.component_title {
+  margin: 0 0 54px 0;
+
+  font-family: 'StyreneAWeb700';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 120%;
+
+  color: #000000;
+}
+
+.component_modules {
+  max-width: 1256px;
+  ;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1320px) {
+  .component_title {
+    text-align: center;
+  }
+
+  .component_modules {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 660px) {
+  .component {
+    margin-bottom: 35px;
+  }
+
+  .component_title {
+    margin-bottom: 27px;
+    font-size: 22px;
+    text-align: start;
+  }
+
+  .component_modules {
+    align-items: baseline;
+  }
+}
